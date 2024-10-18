@@ -1,0 +1,42 @@
+<html>
+    <head>
+    <style>
+        body{
+            background: url('https://theroundpie.com/assets/images/blog/Clock-Hourglass.jpg') no-repeat center center;
+            background-size: cover;
+
+        }
+        p{
+            font-size: 60px;
+            text-align: center;
+            
+            color:white;
+        }
+        h1{
+            text-align:center;
+            margin-top: 18%;
+            color: aliceblue;
+        }
+    </style>
+    </head>
+    <body>
+        <h1>CountDown to Specified Time</h1>
+        <p id = "demo"></p>
+        <script>
+            var countDown = new Date(prompt("Enter Time in the format of 'Month date,year hh:mm:ss'")).getTime();
+            var x = setInterval(function(){
+                var now = new Date().getTime();
+                var distance = countDown - now;
+                var days = Math.floor(distance/(1000*60*60*24));
+                var hours = Math.floor((distance%(1000*60*60*24))/(1000*60*60))
+                var mins = Math.floor((distance%(1000*60*60))/(1000*60))
+                var secs = Math.floor((distance%(1000*60))/1000)
+                document.getElementById("demo").innerHTML = days+"D "+hours+"H "+mins+"M "+secs+"S";
+                if(distance<0){
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "EXPIRED😒"
+                }
+            },1000);
+        </script>
+    </body>
+</html>

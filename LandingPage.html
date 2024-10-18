@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background:#704214; /* Café au Lait color */
+                padding: 15px;
+                width: 100%;
+            }
+            .navbar img {
+                width: 100px;
+                height: 100px;
+            }
+            .navbar a {
+                color: white;
+                text-decoration: none;
+                margin-left: 40px;
+                font-weight: bold;
+                font-size: 18px; /* Added px unit */
+            }
+            .img1 {
+                background: url('https://sandtoncentral.co.za/blog/wp-content/uploads/2023/11/image002-3.webp') no-repeat center;
+                background-size: cover; /* Ensures the image covers the div */
+                height: 900px; 
+                display: flex;
+                text-align: center;
+                color: white;
+            }
+            .img1 h1 {
+                font-size: 48px;
+                text-shadow: 2px 2px 4px rgba(243, 238, 238, 0.7); /* Added shadow for contrast */
+                margin-left: 10%;
+                margin-top: 20%;
+                line-height: 1.5;
+                transition: color 0.5s ease, transform 0.5s ease; 
+                position:absolute;
+                 white-space: nowrap;
+                animation: slide-in 2s linear infinite;
+            }
+            @keyframes slide-in {
+            from {
+                transform: translateX(-100%); 
+                opacity: 0.5; 
+            }
+            to {
+                transform: translateX(0); 
+                opacity: 1; 
+            }
+        }
+            .img1 h3 {
+                font-size: 20px;
+                text-shadow: 2px 2px 4px rgba(243, 238, 238, 0.7); /* Added shadow for contrast */
+                margin-top: 54%;
+                line-height: 1.5;
+                margin-left: 12%;
+            }
+            .about{
+                line-height: 1.8;
+            }
+            footer{
+                display:flex;
+                background:#704214;
+                color:white;
+                align-items: center;
+                padding: 15px;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <a class="split">
+                <img src="https://img.pikbest.com/png-images/coffee-shop-logo-design-vector-graphic-element_1547907.png!sw800" alt="Logo">
+            </a>
+            <div>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Cart</a>
+                <a href="#">Contact</a>
+                <a href="#"><button style="padding:12px;border:2px solid black;border-radius: 10%;">Login</button></a>
+            </div>
+        </div>
+        <div class="img1">
+            <h1>Start Your Day<br>With Coffee</h1>
+            <h3>Coffee is a way of stealing time that should by rights belong to your older self❤️...</h3>
+        </div>
+        <div class="about">
+            <center>
+                <h2>About <span style='color:#704214'>Us</span></h2>
+                <p>A coffee company is a business entity that specializes in the production,
+                    <br>
+                  distribution, and sale of coffee-related products. These companies typically
+                  <br>
+                   operate in various segments of the coffee supply chain, from sourcing raw 
+                   <br>
+                   coffee beans to roasting, packaging, and retailing the final product to consumers.
+                <br>A coffee company is a business entity that specializes in the production,
+                <br>
+              distribution, and sale of coffee-related products. These companies typically
+              <br>
+               operate in various segments of the coffee supply chain, from sourcing raw 
+               <br>
+               coffee beans to roasting, packaging, and retailing the final product to consumers.</p>
+
+            </center>
+        </div>
+        <footer>
+            <p>@2024 CopyRights reserved,India.</p>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i> 
+        </footer>
+    </body>
+</html>
