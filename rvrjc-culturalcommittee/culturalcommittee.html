@@ -1,0 +1,267 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.section1{
+background:green;
+position:fixed;
+width:100%;
+top:0;
+}
+.section1 a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px 20px;
+  text-decoration: none;
+  font-size: 18px;
+font-weight:bold;
+font-family:sans-serif;
+}
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.section1 .icon {
+  display: none;
+}
+.dd1 {
+  float: left;
+}
+.dd1 .ddbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.ddcnt {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.ddcnt a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.section1 a:hover, .dd1:hover .ddbtn {
+  background-color: #555;
+  color: white;
+}
+.ddcnt a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.dd1:hover .ddcnt {
+  display: block;
+}
+#subnav{
+top:100%;
+width:100%;
+margin-top:60px;
+font-family:sans-serif;
+}
+#subnav a{
+float:right;
+padding:33px;
+font-weight:bold;
+text-decoration:none;
+font-size:23px;
+}
+#subnav a:hover{
+color:green;
+}
+.image1{
+padding-top:100px;
+height:400px;
+margin-left:100px;
+}
+.sec3{
+font-size:23;
+padding:10px;
+}
+#id1{
+text-align:justify;
+margin-left:170px;
+margin-right:150px;
+line-height:1.5;
+border-radius:20px;
+font-family:sans-serif;
+}
+#id12{
+text-align:justify;
+margin-left:170px;
+margin-right:150px;
+line-height:1.5;
+border-radius:20px;
+font-size:23;
+position:absolute;
+font-family:sans-serif;
+}
+.container {
+  position: relative;
+  width: 750px;
+  margin: auto;
+height:500px;
+text-align:center;
+position:relative;
+}
+.container img {
+  opacity:0.2;
+width:60%;
+height:450px
+}
+.text {
+  position: absolute;
+  top: 50%;
+left:50%;
+  transform: translate(-50%, -50%);
+  color: black;
+width:200%;
+font-size:23px;
+font-family:sans-serif;
+line-height:1.4;
+}
+.text div {
+  margin-left:50px;
+text-align:justify;
+line-height:1.5;
+font-size:23px;
+font-family:sans-serif;
+}
+#id1234{
+position:absolute;
+margin-top:0;
+text-align:justify;
+margin-left:170px;
+margin-right:150px;
+line-height:1.5;
+border-radius:20px;
+font-size:23;
+font-family:sans-serif;
+text-align:center;
+}
+.row .column{
+box-sizing:border-box;
+padding-top:80px;
+}
+.row .column img{
+  box-shadow: 5px 10px 	#808080;
+border:3px solid #333;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.id12345{
+text-align:justify;
+margin-left:170px;
+margin-right:150px;
+line-height:1.5;
+border-radius:20px;
+font-size:23;
+font-family:sans-serif;
+text-align:center;
+}
+</style>
+</head>
+<body>
+<section class='section1' id='div1'>
+<a href='home.html' class='active'>HOME</a>
+<div class='dd1'>
+<button class='ddbtn' style='font-size: 18px; font-weight:bold;font-family:sans-serif; padding:25px;'>
+ABOUT COLLEGE
+<i class='fa fa-caret-down'></i>
+</button>
+<div class='ddcnt' >
+<a href='https://rvrjcce.ac.in/rvrjchistory.php' target="_blank">HISTORY</a>
+<a href='https://rvrjcce.ac.in/missionvision.php' target="_blank">VISION & MISSION</a>
+<a href='https://rvrjcce.ac.in/ranking.php' target="_blank">RANKING</a>
+<a href='https://rvrjcce.ac.in/campusmap.php' target="_blank">CAMPUS MAP & LOCATION</a>
+<a href='https://rvrjcce.ac.in/accreditation.php' target="_blank">ACCREDITATION & AFFILIATION</a>
+</div>
+</div>
+<a href='culturalcommittee.html'>CULTURAL COMMITTEE</a>
+<a href='javascript:void(0);' class='icon' onclick='myfun()'>&#9776;</a>
+</section>
+<script>
+function myfun(){
+var x=document.getElementById('div1');
+if (x.className==='section1'){
+x.className+='responsive';
+}
+else{
+x.className='section1';
+}
+}
+</script>
+<div id='subnav'>
+<a href='contactus.html'><u>Contact Us<i class='fa fa-fw fa-phone'></i></u></a>
+<a href='staff.html'><u>Staff<i class='fa fa-fw fa-user'></i></u></a>
+<a href='gallery.html'><u>Gallery<i class='fa fa-fw fa-image'></i></u></a>
+<a href='events.html'><u>Events<i class='fa fa-music'></i></u></a>
+<a href='culturalcommittee.html'><u>About</u></a>
+</div>
+<div class='image1'>
+<img align='center' src='https://backend.insideiim.com/wp-content/uploads/2016/02/cultural-committee.jpg' width=1200px height=400px>
+</div>
+<hr color=#333 style='margin-left:150px; margin-right:150px;'>
+<section class='sec3'>
+<p align='center' id='id1'>&emsp;&emsp;&emsp;&emsp;&emsp;In <span style='color:blue;'>RVR & JC College of Engineering</span>, Extra Curricular & Co Curricular Activities Committee is working with an objective of giving a holistic approach to professional higher education. The Committee intends to create an atmosphere, which is intellectually and aesthetically stimulating for the community on the campus. In the pursuit of its objective, Extra & Co curricular activities are held regularly. In addition, the committee also organizes workshops, seminars, lectures, and demonstrations. The activities are informal and are intended to sensitize the academic world to other dimensions of human experience and knowledge, with the hope that this would enrich the lives of students and make them aware of their social responsibilities and understand the implications of their actions. The main responsibility of this committee is to ensure smooth conduct of ANNUAL DAY celebrations and selecting the students team to participate in Inter Collegiate Cultural festivals.This shall be responsible for all intra and inter collegiate cultural events in the College.</p>
+</section>
+<div id='id12'>
+<p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;It is a very good platform for students to showcase their creativity and shed their inhibitions.To Plan and make a Schedule of cultural events during the academic year and to encourage students to participate.Outcome of Cultural Committee is to create a suitable atmosphere to work as a team and refresh themselves from their routine.</p>
+</div>
+<div class="container">
+  <img src="https://rvrjcce.ac.in/ece/youthfest2k17/images/RVRJC1.jpg" alt="RVRJC">
+  <div class="text">
+ <h4><u>COMPOSITION OF THE COMMITTEE</u></h4><ul style='list-style-type:none;'>
+<li>The composition of the committee compromises one senior faculty member as a convener.
+ <li>At least one faculty from each department as a member.
+<li>Students from each department with equal gender and<br> those who are interested in arts and cultural events as a Student Member.
+ </div>
+</div>
+<div id='id1234'>
+<h4><u>DUTIES & RESPONSIBILITIES</u></h4>
+<ul type='disc' style='list-style-type:none;'>
+<li><b>The Convener</b>  convenes meeting for the committee members to discuss and delegate task.</li>
+<li><b>Members of the committee</b> identify the students who have leadership quality, Talent and propose their name to the coordinator as student representative.</li>
+<li><b>Student</b> helps the others to know them self better their interests, abilities, aptitudes and opportunities.</li>
+</ul>
+<h4><u>INTENTIVES</u></h4>
+<ul style='list-style-type:none;'><li>To initiate student participation by the formation of a student activities club.</li>
+<li>To encourage the multi talents of student by proper guidance.</li>
+<li>To recognize and appreciate the dormant multi-talents of students.</li>
+<li>To act as a conduit to translate their gifted talents and usher them into a joy in a unique way.</li>
+<li>To serve a platform to exhibit and enrich their skills.</li>
+<li>To develop traits like co-ordination and team spirit....etc., among the students</li>
+</ul>
+<div class='row'>
+<div class='column'>
+<img src='https://rvrjcce.ac.in/images/css7.JPG' alt='image' style='width:400; height:300;'></div>
+<div class='column'><img src='https://rvrjcce.ac.in/images/che1.JPG' style='width:500; height:300;'></div>
+<div class='column'><img src='https://rvrjcce.ac.in/images/mca1.JPG' style='width:400; height:300;'></div>
+</div>
+<footer style='font-size:18px;background:#F0F0F0;padding:15px;width:100%;'>
+<p>@ 2020 All Rights reserved to RVR & JCCE, Chowdavaram, Guntur-522019.</p>
+</footer>
+</div>
+</body>
+</html>

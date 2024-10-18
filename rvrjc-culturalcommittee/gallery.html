@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RVRJC Photo Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .section1{
+background:green;
+position:fixed;
+width:100%;
+top:0;
+}
+.section1 a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px 20px;
+  text-decoration: none;
+  font-size: 18px;
+font-weight:bold;
+font-family:sans-serif;
+}
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.section1 .icon {
+  display: none;
+}
+.dd1 {
+  float: left;
+}
+.dd1 .ddbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.ddcnt {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.ddcnt a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.section1 a:hover, .dd1:hover .ddbtn {
+  background-color: #555;
+  color: white;
+}
+.ddcnt a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.dd1:hover .ddcnt {
+  display: block;
+}
+#subnav{
+width:100%;
+margin-top:60px;
+font-family:sans-serif;
+height:50px;
+}
+#subnav a{
+float:right;
+padding:33px;
+font-weight:bold;
+font-size:23px;
+}
+#subnav a:hover{
+color:green;
+}
+       .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0 -8px;
+            padding-top: 60px; 
+        }
+        .column {
+            padding: 0 8px;
+            flex: 25%; 
+        }
+        .hover-shadow {
+            transition: 0.3s;
+        }
+        .hover-shadow:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1001;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .modal-content {
+            position: relative;
+            margin: auto;
+            padding: 30px;
+            width: 90%;
+            max-width: 1200px;
+        }
+        .close {
+            color: white;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .mySlides {
+            display: none;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 30px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s ease;
+            border-radius: 3px;
+            user-select: none;
+        }
+        .next {
+            right: 0;
+        }
+        .caption-container {
+            text-align: center;
+            background-color: black;
+            padding: 2px 16px;
+            color: white;
+        }
+#heading{
+margin-top:100px;
+font-family:sans-serif;
+background:#C5E17A;
+margin-right:800px;
+padding:10px;
+}
+#heading h1{
+font-size:30px;
+margin-left:250px;
+}
+.column img {
+    margin: 0.25cm; /* 0.5 cm gap between images */
+    wid
+}
+footer{
+background:#D8D8D8;
+text-align:center;
+font-family:sans-serif;
+padding:2px;
+}
+    </style>
+</head>
+<body>
+<section class='section1'>
+<a href='home.html' class='active'>HOME</a>
+<div class='dd1'>
+<button class='ddbtn' style='font-size: 18px; font-weight:bold;font-family:sans-serif; padding:25px;'>
+ABOUT COLLEGE
+<i class='fa fa-caret-down'></i>
+</button>
+<div class='ddcnt' >
+<a href='https://rvrjcce.ac.in/rvrjchistory.php' target="_blank">HISTORY</a>
+<a href='https://rvrjcce.ac.in/missionvision.php' target="_blank">VISION & MISSION</a>
+<a href='https://rvrjcce.ac.in/ranking.php' target="_blank">RANKING</a>
+<a href='https://rvrjcce.ac.in/campusmap.php' target="_blank">CAMPUS MAP & LOCATION</a>
+<a href='https://rvrjcce.ac.in/accreditation.php' target="_blank">ACCREDITATION & AFFILIATION</a>
+</div>
+</div>
+    <a href='culturalcommittee.html'>CULTURAL COMMITTEE</a>
+</section>
+<div id='subnav'>
+    <a href='contactus.html'><u>Contact Us<i class='fa fa-fw fa-phone'></i></u></a>
+    <a href='staff.html'><u>Staff<i class='fa fa-fw fa-user'></i></u></a>
+    <a href='gallery.html'><u>Gallery<i class='fa fa-fw fa-image'></i></u></a>
+    <a href='events.html'><u>Events<i class='fa fa-music'></i></u></a>
+    <a href='culturalcommittee.html'><u>About</u></a>
+</div>
+<div id='heading'>
+<h1>PHOTO GALLERY</h1>
+</div>
+<div id='line'>
+<p><span style='color:blue;font-size:20px;height:0;'>Tap the image for a closer look:)</span></p>
+</div>
+<div class="row">
+    <div class="column">
+        <img src="https://rvrjcce.ac.in/sports/images/6.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+            <img src="https://rvrjcce.ac.in/sports/images/2.JPG" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="https://lh6.googleusercontent.com/proxy/Sv4p9Pb-tI3z94pKLblOKOKZ1gy6RM-xeDFXuGTfsW-ixE5SpvlUQqDSdMYNh-IECx4MUHKIZAr9Q0fBDSI" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="https://rvrjcce.ac.in/sports/images/3.JPG" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="https://rvrjcce.ac.in/home_gallery/achivements-1.png" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="https://rvrjcce.ac.in/lacgallery/disha2.JPG" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="https://lh5.googleusercontent.com/proxy/AlZ0gOjgAOLTKQpPy_B9AfAIiufrQNbbrCHkyffgyi-C6_Mu28qxGQSF6Bj8_TbOwBN74-INHC1RC4hsYLM" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="https://rvrjcce.ac.in/literary/images/7.JPG" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="https://rvrjcce.ac.in/literary/images/8.JPG" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="https://rvrjcce.ac.in/literary/images/9.JPG" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="https://rvrjcce.ac.in/literary/images/11.JPG" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="https://rvrjcce.ac.in/literary/images/12.JPG" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="https://rvrjcce.ac.in/literary/images/13.JPG" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="https://rvrjcce.ac.in/literary/images/14.JPG" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="https://rvrjcce.ac.in/literary/images/16.JPG" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="https://rvrjcce.ac.in/lacgallery/2022_23_pic5.jpg" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+        </div>
+<div class="column">
+            <img src="https://rvrjcce.ac.in/literary/images/1.JPG" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
+        </div>
+<div class="column">
+            <img src="https://rvrjcce.ac.in/literary/images/32.JPG" style="width:100%" onclick="openModal();currentSlide(18)" class="hover-shadow cursor">
+        </div>
+<div class="column">
+            <img src="https://media.licdn.com/dms/image/C5622AQHcRpXyYCXcZg/feedshare-shrink_800/0/1661696508278?e=2147483647&v=beta&t=XXrcHjeodoXWVxaBobDuoaNIn5WveJ8hlgTxQWqXJ5U" style="width:100%" onclick="openModal();currentSlide(19)" class="hover-shadow cursor">
+        </div>
+<div class="column">
+            <img src="https://rvrjcce.ac.in/home_gallery/achivements-3.png" style="width:100%" onclick="openModal();currentSlide(20)" class="hover-shadow cursor">
+        </div>
+</div>
+
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+        <div class="mySlides">
+            <div class="numbertext">1 / 20</div>
+            <img src="https://rvrjcce.ac.in/sports/images/6.JPG" style="width:100%">
+        </div>
+        <div class="mySlides">
+                <div class="numbertext">2 / 20</div>
+                <img src="https://rvrjcce.ac.in/sports/images/2.JPG" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 20</div>
+                <img src="https://lh6.googleusercontent.com/proxy/Sv4p9Pb-tI3z94pKLblOKOKZ1gy6RM-xeDFXuGTfsW-ixE5SpvlUQqDSdMYNh-IECx4MUHKIZAr9Q0fBDSI" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">4 / 20</div>
+                <img src="https://rvrjcce.ac.in/sports/images/3.JPG" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">5 / 20</div>
+                <img src="https://rvrjcce.ac.in/home_gallery/achivements-1.png" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">6 / 20</div>
+                <img src="https://rvrjcce.ac.in/lacgallery/disha2.JPG" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">7 / 20</div>
+                <img src="https://lh5.googleusercontent.com/proxy/AlZ0gOjgAOLTKQpPy_B9AfAIiufrQNbbrCHkyffgyi-C6_Mu28qxGQSF6Bj8_TbOwBN74-INHC1RC4hsYLM" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">8 / 20</div>
+                <img src="https://rvrjcce.ac.in/literary/images/7.JPG" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">9 / 20</div>
+                <img src="https://rvrjcce.ac.in/literary/images/8.JPG" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">10 / 20</div>
+                <img src="https://rvrjcce.ac.in/literary/images/9.JPG" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">11 / 20</div>
+                <img src="https://rvrjcce.ac.in/literary/images/11.JPG" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">12 / 20</div>
+                <img src="https://rvrjcce.ac.in/literary/images/12.JPG" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">13 / 20</div>
+                <img src="https://rvrjcce.ac.in/literary/images/13.JPG" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">14 / 20</div>
+                <img src="https://rvrjcce.ac.in/literary/images/14.JPG" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">15 / 20</div>
+                <img src="https://rvrjcce.ac.in/literary/images/16.JPG" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">16 / 20</div>
+                <img src="https://rvrjcce.ac.in/lacgallery/2022_23_pic5.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">17 / 20</div>
+                <img src="https://rvrjcce.ac.in/literary/images/1.JPG" style="width:100%">
+            </div>
+<div class="mySlides">
+                <div class="numbertext">18/ 20</div>
+                <img src="https://rvrjcce.ac.in/literary/images/32.JPG" style="width:100%">
+            </div>
+<div class="mySlides">
+                <div class="numbertext">19 / 20</div>
+                <img src="https://media.licdn.com/dms/image/C5622AQHcRpXyYCXcZg/feedshare-shrink_800/0/1661696508278?e=2147483647&v=beta&t=XXrcHjeodoXWVxaBobDuoaNIn5WveJ8hlgTxQWqXJ5U" style="width:100%">
+            </div>
+<div class="mySlides">
+                <div class="numbertext">20 / 20</div>
+                <img src="https://rvrjcce.ac.in/home_gallery/achivements-3.png" style="width:100%">
+            </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+    </div>
+</div>
+<div><h4 align='right'><span style='color:blue;font-size:33px;'>MORE TO ADD💙...</span></h4></div>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function openModal() {
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let slides = document.getElementsByClassName("mySlides");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+        captionText.innerHTML = slides[slideIndex - 1].getElementsByTagName("img")[0].alt || "";
+    }
+</script>
+<footer>
+<h4>|| Terms & Conditions || Site Credits ||</h4>
+<p>@ 2020 All Rights reserved to RVR & JCCE, Chowdavaram, Guntur-522019.</p>
+</footer>
+</body>
+</html>

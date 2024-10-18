@@ -1,0 +1,260 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.section1{
+background:green;
+position:fixed;
+width:100%;
+top:0;
+}
+.section1 a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px 20px;
+  text-decoration: none;
+  font-size: 18px;
+font-weight:bold;
+font-family:sans-serif;
+}
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.section1 .icon {
+  display: none;
+}
+.dd1 {
+  float: left;
+}
+.dd1 .ddbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.ddcnt {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.ddcnt a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.section1 a:hover, .dd1:hover .ddbtn {
+  background-color: #555;
+  color: white;
+}
+.ddcnt a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.dd1:hover .ddcnt {
+  display: block;
+}
+#subnav{
+width:100%;
+margin-top:60px;
+font-family:sans-serif;
+height:50px;
+}
+#subnav a{
+float:right;
+padding:33px;
+font-weight:bold;
+font-size:23px;
+}
+#subnav a:hover{
+color:green;
+}
+#id01{
+padding:50px;
+text-align:center;
+font-family:sans-serif;
+}
+#id01 th{
+background:rgba(0,0,0,0.4);
+}
+#id01 table,th,td{
+border-collapse:collapse;
+}
+#id01 tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+#id01 tr:hover{
+background:#D8D8D8;
+}
+#id01 td a{
+text-decoration:none;
+color:blue;
+}
+#id01 td a:hover{
+color:green;
+}
+footer{
+background:#D8D8D8;
+text-align:center;
+font-family:sans-serif;
+padding:2px;
+}
+</style>
+</head>
+<body>
+<section class='section1'>
+<a href='home.html' class='active'>HOME</a>
+<div class='dd1'>
+<button class='ddbtn' style='font-size: 18px; font-weight:bold;font-family:sans-serif; padding:25px;'>
+ABOUT COLLEGE
+<i class='fa fa-caret-down'></i>
+</button>
+<div class='ddcnt' >
+<a href='https://rvrjcce.ac.in/rvrjchistory.php' target="_blank">HISTORY</a>
+<a href='https://rvrjcce.ac.in/missionvision.php' target="_blank">VISION & MISSION</a>
+<a href='https://rvrjcce.ac.in/ranking.php' target="_blank">RANKING</a>
+<a href='https://rvrjcce.ac.in/campusmap.php' target="_blank">CAMPUS MAP & LOCATION</a>
+<a href='https://rvrjcce.ac.in/accreditation.php' target="_blank">ACCREDITATION & AFFILIATION</a>
+</div>
+</div>
+<a href='culturalcommittee.html'>CULTURAL COMMITTEE</a>
+<a href='javascript:void(0);' class='icon' onclick='myfun()'>&#9776;</a>
+</section>
+<script>
+function myfun(){
+var x=document.getElementById('div1');
+if (x.className==='section1'){
+x.className+='responsive';
+}
+else{
+x.className='section1';
+}
+}
+</script>
+<div id='subnav'>
+<a href='contactus.html'><u>Contact Us<i class='fa fa-fw fa-phone'></i></u></a>
+<a href='staff.html'><u>Staff<i class='fa fa-fw fa-user'></i></u></a>
+<a href='gallery.html'><u>Gallery<i class='fa fa-fw fa-image'></i></u></a>
+<a href='events.html'><u>Events<i class='fa fa-music'></i></u></a>
+<a href='culturalcommittee.html'><u>About</u></a>
+</div>
+<div id='id01'>
+<h2>FACULTY MEMBERS OF THE COMMITTEE</h2>
+<table align='center' border='5' cellspacing='15' cellpadding='15'>
+<tr>
+<th>FACULTY NAME</th>
+<th>DESIGNATION</th>
+<th>DEPARTMENT</th>
+<th>ROLE</th>
+<th>DETAILS OF THE FACULTY</th>
+</tr>
+<tr>
+<td>Dr. P. V. Kishore Babu  </td>
+<td> Associate Professor</td>
+<td> EEE</td>
+<td><span style='color:red;'>Convener</span></td>
+<td><a href="http://www.rvrjcce.ac.in/Electrical/faculty/kishore.php">click here</td>
+</tr>
+<tr>
+<td> Dr. V. Ramakoteswara Rao</td>
+<td> Associate Professor </td>
+<td>ME </td>
+<td><span style='color:blue;'>Co-Convener</span></td>
+<td><a href="http://me.rvrjcce.ac.in/faculty/vrkr.php">click here</td>
+</tr>
+<tr>
+<td>Dr. P. Samatha Chowdary</td>
+<td>Associate Professor</td>
+<td>CE </td>
+<td>Member</td>
+<td><a href="http://ce.rvrjcce.ac.in/faculty/psc.php">click here</td></tr>
+<tr>
+<td> Mr. J. Ranga Raya Chowdary</td>
+<td> Asst. Prof </td><td> ME </td><td>Member</td>
+<td><a href="http://me.rvrjcce.ac.in/faculty/jrrc.php">click here</td></tr>	     
+<tr><td>Dr. P. Rohini Kumar</td>
+<td> Associate Professor </td>
+<td>ChE</td>
+<td>Member</td>
+<td><a href="http://che.rvrjcce.ac.in/prk.html">click here</td></tr>
+<tr>
+<td> Dr. M. Anitha </td>
+<td>Associate Professor</td>
+<td>EEE </td>
+<td>Member</td>
+<td><a href="http://www.rvrjcce.ac.in/Electrical/faculty/ma.php">click here</td></tr>
+<tr>
+<td> Mrs. M. Sunitha </td>
+<td>Assistant Professor</td>
+<td> ECE </td>
+<td>Member</td>
+<td><a href="http://ece.rvrjcce.ac.in/facultyprofile.php">click here</td></tr>
+<tr>
+<td>Mrs. M. Vasavi</td>
+<td> Assistant Professor </td>
+<td> CSE </td>
+<td> Member </td>
+<td><a href="http://cse.rvrjcce.ac.in/faculty/mv.php">click here</td></tr>
+<tr><td>Mrs. K. Venkata Anusha </td>
+<td> Assistant Professor </td><td> CSE (AI & ML) </td><td> Member </td>
+<td><a href="http://it.rvrjcce.ac.in/faculty/kva.php">click here</td></tr>				
+<tr><td>Dr. Lakshmikanth Paleti </td>
+<td> Associate Professor </td>
+<td> CSBS </td>
+<td> Member </td>
+<td><a href="http://csbs.rvrjcce.ac.in/faculty/plk.php">click here</td></tr>
+<tr><td>Mr. P. Srinivasa Rao</td>
+<td>Assistant Professor </td><td>CSE (DS)</td>
+<td>Member</td> 
+<td><a href="http://csbs.rvrjcce.ac.in/faculty/msr.php">click here</td></tr>
+<tr><td>Dr. A. Yaswanth Kumar </td>
+<td> Associate Professor</td><td>IT </td>
+<td>Member</td>
+<td><a href="http://it.rvrjcce.ac.in/faculty/ayk.php">click here</td></tr>
+<tr><td> Mr. P. Siddhardha </td>
+<td> Assistant Professor</td><td>MBA</td>
+<td>Member</td>
+<td><a href="http://mnh.rvrjcce.ac.in/faculty/siddhardha.php">click here</td></tr>
+<tr><td> Mrs. V. Sujatha Lakshmi</td>
+<td> Assistant Professor</td>
+<td>MCA</td>
+<td>Member</td>
+<td><a href="http://mnh.rvrjcce.ac.in/faculty/vsl.php">click here</td></tr>
+<tr><td> Mr. Sreeram Nimmagadda </td>
+<td> Assistant Professor</td><td>Physics</td>
+<td>Member</td>
+<td><a href="http://physics.rvrjc.ac.in/faculty/sriramnimmagadda.php">click here</td></tr>
+<tr><td> Dr. N. Phani Pooja </td>
+<td>Assistant Professor</td><td>English</td>
+<td>Member</td>
+<td><a href="http://mnh.rvrjcce.ac.in/faculty/npp.php">click here</td></tr>
+<tr><td> Dr. D. Rajani </td>
+<td> Associate Professor</td><td>English</td>
+<td>Member</td>
+<td><a href="http://mnh.rvrjcce.ac.in/faculty/rajani.php">click here</td></tr>
+<tr><td> Mrs. Ch. Vijaya Lakshmi </td>
+<td> Assistant Professor (Pro term)</td>
+<td>CSE</td>
+<td>Member</td>
+<td><a href="http://cse.rvrjcce.ac.in/faculty/chvl.php">click here</td></tr>
+</table>
+</div>
+</section>
+<footer>
+<h4>|| Terms & Conditions || Site Credits ||</h4>
+<p>@ 2020 All Rights reserved to RVR & JCCE, Chowdavaram, Guntur-522019.</p>
+</footer>
+</body>
+</html>
