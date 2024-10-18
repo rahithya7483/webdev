@@ -1,0 +1,164 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+header{
+background:#F0F0F0;
+padding:0px 0px 10px 0px;
+color:#56887D;
+text-align:center;
+font-family:sans-serif;
+font-weight:bold;
+}
+.section1{
+background:green;
+overflow:hidden;
+}
+.section1 a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px 20px;
+  text-decoration: none;
+  font-size: 18px;
+font-weight:bold;
+font-family:sans-serif;
+}
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.section1 .icon {
+  display: none;
+}
+.dd1 {
+  float: left;
+  overflow: hidden;
+}
+.dd1 .ddbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.ddcnt {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.ddcnt a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.section1 a:hover, .dd1:hover .ddbtn {
+  background-color: #555;
+  color: white;
+}
+.ddcnt a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.dd1:hover .ddcnt {
+  display: block;
+}
+#section2{
+background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('https://lh3.googleusercontent.com/p/AF1QipPw0f49MrhbkXlSbMEBdtSO1JjvboELnC9yaOs=w1080-h608-p-k-no-v0');
+height:800px;
+display:flex;
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center;
+justify-content:center;
+position:relative;
+}
+.div1{
+text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+color:white;
+font-family:sans-serif;
+}
+.div1 ul{
+list-style:none;
+font-size:23px;
+}
+footer{
+background:green;
+text-align:center;
+font-family:sans-serif;
+  padding: 2px 0px;
+color:white;
+}
+</style>
+</head>
+<body>
+<header>
+<img align='left' src='https://lh4.googleusercontent.com/proxy/kNjIwPQi1h-fvld6NdHOE_PwtV39IIdQUErOZfiv0MMts3gbD4l_ar_HOQIfesy1NBqp73GjVgUBMIiKj0Y1sZuYdmHfB6CEELGTFbFVCeP2' width=200 height=200>
+<img align='right' src='https://rvrjcce.ac.in/ece/youthfest2k17/images/RVRJC1.jpg' width=200 height=200>
+<b><h1 align='center'>RVR & JC COLLEGE OF ENGINEERING(AUTONOMOUS)</h1></b>
+<h2 align='center'><i>Approved by AICTE || Affiliated to Acharya Nagarjuna University</i></h2>
+<h2 align='center'><span style='color:blue'>NAAC A<sup>+</sup> Grade.</span></h2>
+<h4><span style='color:black'>Chandramoulipuram,Chowdavaram,Guntur-522019(A.P).</span></h4>
+</header>
+<section class='section1' id='div1'>
+<a href='home.html' class='active'>HOME</a>
+<div class='dd1'>
+<button class='ddbtn' style='font-size: 18px; font-weight:bold;font-family:sans-serif; padding:25px;'>
+ABOUT COLLEGE
+<i class='fa fa-caret-down'></i>
+</button>
+<div class='ddcnt' >
+<a href='https://rvrjcce.ac.in/rvrjchistory.php' target="_blank">HISTORY</a>
+<a href='https://rvrjcce.ac.in/missionvision.php' target="_blank">VISION & MISSION</a>
+<a href='https://rvrjcce.ac.in/ranking.php' target="_blank">RANKING</a>
+<a href='https://rvrjcce.ac.in/campusmap.php' target="_blank">CAMPUS MAP & LOCATION</a>
+<a href='https://rvrjcce.ac.in/accreditation.php' target="_blank">ACCREDITATION & AFFILIATION</a>
+</div>
+</div>
+<a href='culturalcommittee.html' target="_blank">CULTURAL COMMITTEE</a>
+<a href='javascript:void(0);' class='icon' onclick='myfun()'>&#9776;</a>
+</section>
+<script>
+function myfun(){
+var x=document.getElementById('div1');
+if (x.className==='section1'){
+x.className+='responsive';
+}
+else{
+x.className='section1';
+}
+}
+</script>
+<section id='section2'>
+<div class='div1'>
+<h1 style='color:#FBE870;font-size:60px;'><u>Welcome to RVR & JC</u></h1>
+<ul>
+<li>Academic Excellence</li>
+<li>State-of-the-Art Infrastructure</li>
+<li>Experienced Faculty</li>
+<li>Strong Industry Connections</li>
+<li>Holistic Development</li>
+</ul>
+<div>
+</section>
+<footer>
+<h4>|| Terms & Conditions || Site Credits ||</h4>
+<p>@ 2020 All Rights reserved to RVR & JCCE, Chowdavaram, Guntur-522019.</p>
+</footer>
+</body>
+</html>
